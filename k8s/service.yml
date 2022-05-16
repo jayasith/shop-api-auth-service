@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: shop-api-auth-service
+  name: auth-service
 spec:
   selector:
-    app: shop-api-auth-service
+    app: auth-service
   type: LoadBalancer
   ports:
     - port: 5006

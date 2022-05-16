@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: shop-api-auth-service
+  name: auth-service
 spec:
   selector:
     matchLabels:
-      app: shop-api-auth-service
+      app: auth-service
   template:
     metadata:
       labels:
-        app: shop-api-auth-service
+        app: auth-service
     spec:
       containers:
-        - name: shop-api-auth-service
+        - name: auth-service
           image: jayasith98/shop-api-auth-service
           resources:
             limits:
