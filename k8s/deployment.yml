@@ -2,18 +2,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: githubactions-aks-demo-auth
+  name: githubactions-aks-auth
 spec:
   selector:
     matchLabels:
-      app: shop-api-auth-service
+      app: shop-api-auth
   template:
     metadata:
       labels:
-        app: shop-api-auth-service
+        app: shop-api-auth
     spec:
       containers:
-        - name: shop-api-auth-service
+        - name: shop-api-auth
           image: jayasith98/shop-api-auth-service
           resources:
             limits:
