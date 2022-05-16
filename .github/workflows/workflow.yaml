@@ -27,6 +27,7 @@ jobs:
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/shop-api-auth-service:${{ github.sha }}
 
+
     - name: Azure Kubernetes set context
       uses: Azure/aks-set-context@v1
       with:
