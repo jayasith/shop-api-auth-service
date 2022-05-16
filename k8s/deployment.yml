@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: githubactions-auth-aks-demo
+  name: githubactions-aks-auth-demo
 spec:
   selector:
     matchLabels:
