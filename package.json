@@ -1,5 +1,5 @@
 {
-	"name": "gateway",
+	"name": "auth-service",
 	"version": "1.0.0",
 	"description": "",
 	"main": "server.js",
@@ -14,7 +14,6 @@
 		"cors": "^2.8.5",
 		"dotenv": "^16.0.0",
 		"express": "^4.18.1",
-		"express-http-proxy": "^1.6.3",
 		"jsonwebtoken": "^8.5.1"
 	},
 	"devDependencies": {

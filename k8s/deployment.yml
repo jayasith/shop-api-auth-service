@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: githubactions-aks-auth
+  name: githubactions-aks-demo
 spec:
   selector:
     matchLabels:
@@ -20,4 +20,4 @@ spec:
               memory: "512Mi"
               cpu: "500m"
           ports:
-            - containerPort: 5000
+            - containerPort: 5006

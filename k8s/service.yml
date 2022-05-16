@@ -7,5 +7,5 @@ spec:
     app: shop-api-auth
   type: LoadBalancer
   ports:
-    - port: 5000
-      targetPort: 5000
+    - port: 5006
+      targetPort: 5006
