@@ -1,0 +1,23 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: githubactions-aks-demo
+spec:
+  selector:
+    matchLabels:
+      app: shop-api-auth-service
+  template:
+    metadata:
+      labels:
+        app: shop-api-auth-service
+    spec:
+      containers:
+        - name: shop-api-auth-service
+          image: jayasith98/shop-api-auth-service
+          resources:
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          ports:
+            - containerPort: 5000
