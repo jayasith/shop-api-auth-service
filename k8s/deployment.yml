@@ -2,15 +2,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: auth-service
+  name: shop-api-auth-service
 spec:
   selector:
     matchLabels:
-      app: auth-service
+      app: shop-api-auth-service
   template:
     metadata:
       labels:
-        app: auth-service
+        app: shop-api-auth-service
     spec:
       containers:
         - name: auth-service
@@ -20,4 +20,4 @@ spec:
               memory: "512Mi"
               cpu: "500m"
           ports:
-            - containerPort: 5006
+            - containerPort: 8080
